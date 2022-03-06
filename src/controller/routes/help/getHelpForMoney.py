@@ -5,5 +5,11 @@ languageConfig = getLanguageConfig()
 
 
 async def getHelpForMoney(self: Client, message: Message):
+    """
+    send help message about money system
+    :param self:
+    :param message:
+    :return:
+    """
     embed = help.getEmbed()
     await message.channel.send(embed=embed)

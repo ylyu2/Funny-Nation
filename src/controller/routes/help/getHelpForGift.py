@@ -7,6 +7,12 @@ languageConfig = getLanguageConfig()
 giftConfig = getGiftConfig()
 generalConfig = getGeneralConfig()
 async def getHelpForGift(self: Client, message: Message):
+    """
+    send help message about gift system in bot
+    :param self:
+    :param message:
+    :return:
+    """
     sections: str = giftConfig.sections()
     generalConfig = getGeneralConfig()
     prefix = generalConfig['command']['prefix']

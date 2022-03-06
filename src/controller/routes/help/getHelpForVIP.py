@@ -6,6 +6,12 @@ VIPConfig = getVipTagsConfig()
 generalConfig = getGeneralConfig()
 
 async def getHelpForVIP(self: Client, message: Message):
+    """
+    send help message about VIP system
+    :param self:
+    :param message:
+    :return:
+    """
     sections: str = VIPConfig.sections()
     prefix = generalConfig['command']['prefix']
     field = ""
